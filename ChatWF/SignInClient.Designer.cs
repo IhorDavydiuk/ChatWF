@@ -41,8 +41,6 @@
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(79, 20);
             this.textBoxName.TabIndex = 2;
-            this.textBoxName.Text = "QQ";
-           // this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             // 
             // textBoxPassword
             // 
@@ -50,7 +48,7 @@
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(79, 20);
             this.textBoxPassword.TabIndex = 3;
-            this.textBoxPassword.Text = "11";
+            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
             // 
             // label3
             // 
@@ -80,7 +78,7 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // SignUpClient
+            // SignInClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -90,9 +88,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxName);
-            this.Name = "SignUpClient";
+            this.Name = "SignInClient";
             this.Text = "EnterClient";
-           // this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EnterClient_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

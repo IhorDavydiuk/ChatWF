@@ -28,5 +28,10 @@ namespace ChatWF
         {
             this.Close();
         }
+
+        private void textBoxPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
