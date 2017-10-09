@@ -1,17 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Sockets;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChatWF
+namespace ChatServerWF
 {
-    interface IClient
-    {
-        void InitializationClient(TcpClient client);
-        void ReadingMessages(ProtokolStream protocolStream);
-    }
     static class Program
     {
         /// <summary>
@@ -22,7 +16,7 @@ namespace ChatWF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChatWindow());
+            Application.Run(new Form1());
         }
     }
 }

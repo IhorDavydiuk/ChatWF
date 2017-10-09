@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B5735C52-266D-4E7E-AB4F-CB4E3354A859}</ProjectGuid>
+    <ProjectGuid>{85990A83-2B48-4822-AB53-0AFFEBE710C8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ChatWF</RootNamespace>
-    <AssemblyName>ChatWF</AssemblyName>
+    <RootNamespace>ChatServerWF</RootNamespace>
+    <AssemblyName>ChatServerWF</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,48 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client.cs" />
-    <Compile Include="ClientBase.cs" />
-    <Compile Include="RegistrationUsers.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrationUsers.Designer.cs">
-      <DependentUpon>RegistrationUsers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Requests\RegistrationResponse.cs" />
-    <Compile Include="SignInClient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SignInClient.Designer.cs">
-      <DependentUpon>SignInClient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ProtokolStream.cs" />
-    <Compile Include="RequestInfo.cs" />
-    <Compile Include="Requests\MessageRequest.cs" />
-    <Compile Include="Requests\PrivateMessageRequest.cs" />
-    <Compile Include="Requests\RegistrationRequest.cs" />
-    <Compile Include="Requests\Request.cs" />
-    <Compile Include="Requests\SignInRequest.cs" />
-    <Compile Include="Requests\SignInResponse.cs" />
-    <Compile Include="Requests\UsersOnlineRequest.cs" />
-    <Compile Include="Server.cs" />
-    <Compile Include="WorkWithDB.cs" />
-    <Compile Include="ChatWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChatWindow.Designer.cs">
-      <DependentUpon>ChatWindow.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="RegistrationUsers.resx">
-      <DependentUpon>RegistrationUsers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SignInClient.resx">
-      <DependentUpon>SignInClient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChatWindow.resx">
-      <DependentUpon>ChatWindow.cs</DependentUpon>
+    <Compile Include="Server.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
